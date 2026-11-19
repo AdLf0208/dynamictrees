@@ -1,0 +1,28 @@
+path	source	note
+assets/dynamictrees/blockstates/oak_branch.json	derived:assets/dynamictrees/blockstates/oak_branch.json	same shape; the model is this port's log-shaped branch model
+assets/dynamictrees/blockstates/oak_leaves.json	jar:assets/dynamictrees/blockstates/oak_leaves.json	carried byte-identical
+assets/dynamictrees/blockstates/oak_sapling.json	derived:assets/dynamictrees/blockstates/oak_sapling.json	same single-variant shape; the model path is this port's own sapling model
+assets/dynamictrees/items/oak_seed.json	derived:-	26.3 item definition (assets/<ns>/items/) naming this port's item model
+assets/dynamictrees/lang/en_us.json	derived:assets/dynamictrees/lang/en_us.json	only the oak family's keys; the sapling and leaves names are added (the jar has none)
+assets/dynamictrees/models/block/oak_branch.json	derived:assets/dynamictrees/models/block/oak_branch.json	upstream's dynamictrees:branch model loader is not portable; vanilla's oak log model
+assets/dynamictrees/models/block/saplings/oak.json	derived:assets/dynamictrees/models/block/saplings/oak.json	upstream's dynamictrees:smartmodel/sapling is not portable; a vanilla cross model with the oak sapling texture
+assets/dynamictrees/models/item/oak_seed.json	derived:assets/dynamictrees/models/item/oak_seed.json	upstream parents dynamictrees:item/standard_seed, which is item/generated; inlined
+assets/dynamictrees/textures/item/oak_seed.png	jar:assets/dynamictrees/textures/item/oak_seed.png	carried byte-identical
+data/dynamictrees/horizon/block/oak_branch.json	derived:-	content declaration: template minecraft:oak_planks (stateless solid), no item
+data/dynamictrees/horizon/block/oak_leaves.json	derived:-	content declaration: template minecraft:oak_leaves, no item
+data/dynamictrees/horizon/block/oak_sapling.json	derived:-	content declaration: template minecraft:poppy, random_ticks true, no item
+data/dynamictrees/horizon/creative_tab/dynamictrees.json	derived:-	the jar's itemGroup.dynamictrees tab, with the one item this slice carries
+data/dynamictrees/horizon/item/oak_seed.json	derived:-	content declaration: template minecraft:stick (a plain 64-stack item, no use)
+data/dynamictrees/loot_table/blocks/oak_branch.json	derived:data/dynamictrees/loot_table/trees/branches/oak.json	upstream's multiply_logs_count/multiply_sticks_count are its own code; one oak log plus 1-2 sticks, 26.3 shape
+data/dynamictrees/loot_table/blocks/oak_leaves.json	derived:data/dynamictrees/loot_table/blocks/oak_leaves.json	upstream's seed_item entry type and seasonal_seed_drop_chance condition are its own code; oak_seed at the same table_bonus chances, sticks as upstream
+data/dynamictrees/loot_table/blocks/oak_sapling.json	derived:data/dynamictrees/loot_table/blocks/oak_leaves.json	upstream drops the species' seed (DynamicSaplingBlock.getDrops); 26.3 shape
+data/dynamictrees/tags/block/branches.json	derived:data/dynamictrees/tags/block/branches.json	only the branches_that_burn branch (no fungus branches in this slice)
+data/dynamictrees/tags/block/branches_that_burn.json	derived:data/dynamictrees/tags/block/branches_that_burn.json	the oak branch alone
+data/dynamictrees/tags/block/leaves.json	derived:data/dynamictrees/tags/block/leaves.json	the oak leaves alone
+data/dynamictrees/tags/block/saplings.json	derived:data/dynamictrees/tags/block/saplings.json	the oak sapling alone
+data/dynamictrees/tags/item/seeds.json	derived:data/dynamictrees/tags/item/seeds.json	the oak seed alone
+data/minecraft/tags/block/leaves.json	derived:data/dynamictrees/tags/block/leaves.json	upstream adds #dynamictrees:leaves to minecraft:leaves
+data/minecraft/tags/block/logs.json	derived:data/dynamictrees/tags/block/branches.json	upstream adds #dynamictrees:branches to minecraft:logs; the oak branch keeps leaves alive (prevents_nearby_leaf_decay is #minecraft:logs)
+data/minecraft/tags/block/logs_that_burn.json	derived:data/dynamictrees/tags/block/branches_that_burn.json	upstream adds #dynamictrees:branches_that_burn to minecraft:logs_that_burn
+data/minecraft/tags/block/saplings.json	derived:data/dynamictrees/tags/block/saplings.json	upstream adds #dynamictrees:saplings to minecraft:saplings
+data/minecraft/tags/item/saplings.json	derived:data/dynamictrees/tags/item/seeds.json	upstream adds #dynamictrees:seeds to minecraft:saplings (item tag)

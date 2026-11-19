@@ -1,0 +1,24 @@
+id = "dynamictrees"
+name = "Dynamic Trees"
+version = "0.1.0"
+description = """Dynamic Trees for Horizon, slice 1: the oak. An oak acorn planted on soil
+grows through named stages over time — sprout, trunk, branches, canopy — into a tree whose
+trunk, branches and leaves are placed progressively and whose growth resumes after a
+relaunch. Every other species, the tree-pack API, the dendro pouch and the cell-kit solver are
+out of this slice."""
+authors = ["Ferreusveritas", "AdLf0208"]
+# A native mod: Rust in src/, compiled by the launcher against the game build [native] pins,
+# beside data/ and assets/. The id is the resource namespace and the only identity: Cargo's
+# package name and version are not the mod's.
+api = "0.2"
+# "both" is the installation side, not the hook's: an integrated server belongs to the client
+# installation, so a LAN host or a single-player world needs both.
+side = "both"
+# "May add blocks, items, mob effects and entity types": the oak sapling, branch and leaves
+# blocks and the oak seed item are declared under data/dynamictrees/horizon/.
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "0b14f8acfd97fa2c750e42795249dcc981178ca4"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"

@@ -1,0 +1,9 @@
+{
+  "template": "minecraft:poppy",
+  "properties": {
+    "hardness": 0.0,
+    "random_ticks": true,
+    "occludes": false
+  },
+  "item": false
+}

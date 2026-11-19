@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dynamictrees:oak_seed"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "dynamictrees:blocks/oak_sapling"
+}

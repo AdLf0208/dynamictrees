@@ -1,0 +1,8 @@
+{
+  "block.dynamictrees.oak_branch": "Oak Tree",
+  "block.dynamictrees.oak_leaves": "Oak Leaves",
+  "block.dynamictrees.oak_sapling": "Oak Sapling",
+  "item.dynamictrees.oak_seed": "Oak Acorn",
+  "itemGroup.dynamictrees": "Dynamic Trees",
+  "species.dynamictrees.oak": "Oak"
+}
